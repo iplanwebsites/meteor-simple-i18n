@@ -18,7 +18,7 @@
   // @see `I18n.prototype.t`
    Handlebars.registerHelper('t', function(object){ 
     if(! Meteor.i18n){
-      return '...'; // return dummy string before we can access the i18n global instance
+      // return '...'; // return dummy string before we can access the i18n global instance
       var i18n = Meteor.I18n(OPTIONS_i18n) ;// create a new instance (inneficient)
     }else{
       var i18n = Meteor.i18n;
