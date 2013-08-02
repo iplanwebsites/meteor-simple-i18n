@@ -12,6 +12,9 @@ Simple internationalization using collections and session.
 1. Run `Meteor.I18n()` on the server to publish `current_language_records`.
 2. Run `Meteor.I18n()` on the client to subscribe to `current_language_records`.
 
+3. Store the instance in a globally accessible i18n varialbe, and in Meteor.i18n (so it's accessible by the handlebar view helper)
+ ` i18n = Meteor.i18n = Meteor.I18n(OPTIONS_i18n);`
+
 *You can pass some options to initialize the i18n package, see `I18n.prototype.init` for more info*
 
 ## How to add translations
